@@ -101,6 +101,7 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   display: flex;
+  padding: 2vh;
 }
 
 .jumbotron-content h1 {
