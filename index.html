@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Coding Reference</title>
+  </head>
+  <body>
+    <div class="site-container">
+      <header>
+        <nav id="mobilenav">
+          <a href="#"><li>Home</li></a>
+          <a href="#htmllink"><li>HTML</li></a>
+          <a href="#csslink"><li>CSS</li></a>
+          <a href="#plink"><li>Pos</li></a>
+          <a href="#gitlink"><li>Git</li></a>
+        </nav>
+        <nav id="nav">
+          <a href="#"><li>Home</li></a>
+          <a href="#htmllink"><li>Basic HTML</li></a>
+          <a href="#csslink"><li>Basic CSS</li></a>
+          <a href="#plink"><li>Positioning</li></a>
+          <a href="#gitlink"><li>Git</li></a>
+          <a href="#openlink"><li>Source Code</li></a>
+        </nav>
+      </header>
+
+      <div class="landing-area">
+        <div class="jumbotron">
+          <div class="jumbotron-content">
+            <h1>HTML and CSS Help Reference Sheet</h1>
+            <h2>Common Terms and Basic Guide</h2>
+          </div>
+        </div>
+      </div>
+
+      <span id="htmllink" class="anchor"></span>
+      <div class="basic-html">
+        <div class="section-title">
+          <span>HTML</span>
+        </div>
+          <div class="htmls">
+            <div class="html">
+            <div class="html-title">
+              <<span>head</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                Page Data is covered in the HTML <<span>head</span>> tag. In text editors
+                like <strong>Atom,</strong> there is a built in "tab" function to
+                automatically add your basic "boilderplate" code by typing "html"
+                and hitting the tab key. The <<span>head</span>> tag stores the
+                <<span>meta</span>>, the <<span>link</span>> tags, and the
+                <<span>title</span>> tag.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>header</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                The <<span>header</span>> is at the top of a webpage. It is inside
+                of the <<span>body</span>> and typically is the parent element of
+                the <<span>nav</span>> element. The <<span>header</span>> is often
+                set to position: fixed in CSS. Using a reset.css is important
+                because the header will render and space slightly differently than
+                you intend as a developer without it.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>link</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                The <<span>link</span>> HTML tag is, again, nested in the <<span>header</span>>.
+                It has three sections with many argument choices. Syntax for the arguments
+                is: <<span>link</span> href="url" type="texttype" rel="argument" />.
+                <<span>link</span>> tags are used to link CSS sheets, online CDNs (ex. Bootstrap),
+                and external APIs (Like Google Fonts).
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>nav</span>> and <<span>li</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                <<span>nav</span>> elements are usually nested in <<span>header</span>>
+                or <<span>footer</span>> elements, but can be anywhere on a page.
+                A <<span>nav</span>> <<span>li</span>> is usually wrapped in an
+                <<span>a</span>> (link) tag. Using CSS to transform the basic list
+                really turns a static <<span>nav</span>> list into a good looking
+                navigation menu bar. The bar at the top of the page is exactly that;
+                a fixed <<span>header</span>> with a <<span>nav</span>> styled
+                with CSS.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>ul</span>>, <<span>ol</span>>, and <<span>li</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                <<span>ul</span>> tags are <em>unordered</em> lists, with <<span>li</span>>
+                child elements. In other words, bullet lists. <br><br> <<span>ol</span>> tags are
+                <em>ordered</em> with <<span>li</span>> child elements. These are numbered. <br><br>
+                <<span>li</span>> elements are inside of other tags and are the individual
+                <em>list items.</em>
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>h1</span>> thru <<span>h6</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                <<span>h1</span>> thru <<span>h6</span>> tags define headers (different
+                than the <<span>header</span>> tag). These tags usually do NOT render
+                when a reset.css is in place, so they are treated like a <<span>span</span>>
+                or <<span>div</span>> tag that you can just set font-size: value; in CSS.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>span</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                <<span>span</span>> elements are one-line versions of the <<span>div</span>>
+                grouping element. These elements don't alter content or size; they are
+                there to help you organize and place elements using CSS, CSS Grid, CSS Flexbox,
+                etc. They allow you to select text or words inbetween their opening
+                and closing lines and assign a class, ID, or property directly. Every tag
+                (<<span>tag</span>>) on this site that you can read is rendered
+                with a <<span>span</span>> element, like <<<span>span</span>>exampletag<<span>span</span>>>.
+                The extra <> on the end allows the browser to display the tag even though it
+                <em>really</em> wants to treat it as non-text code.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>div</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                <<span>div</span>> grouping elements are prehaps the most important
+                HTML organizational element. By using logic and writing code in a
+                readable, understandable way, web developers use <<span>div</span>>
+                tags to group other divs, create rows and columns, organize content,
+                style content, position elements, and basically lay out the page
+                however they see fit.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>p</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                <<span>p</span>> elements are just your ordinary paragraph, longer
+                text tags. They are usually nested in <<span>divs</span>> and have
+                multiple lines. Often, the styling <<span>strong</span>> or
+                <<span>em</span>> tags are used to affect text, and CSS classes
+                are applied for text manipulation.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>strong</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                <<span>strong</span>> tags are very simple. Text that they
+                surround are <strong>bold</strong>. If you are using a reset.css
+                you will have to declare somewhere in your style.css that
+                <<span>strong</span>> has a font-weight of bold. You could even add
+                this CSS call to reset.css and it will take effect once again.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>em</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                <<span>em</span>> tags similar to <<span>strong</span>> tags.
+                They make the font-style of text they surround <em>italic.</em> Again, like
+                <<span>strong</span>> tags, you will have to declare <<span>em</span>>
+                to have a font-style of italic in reset.css or style.css for this to
+                take effect because reset.css negates these calls.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>a</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                The <<span>a</span>> tag is a link. No, not a <<span>link</span>>,
+                but a literal link that you can direct to local or remote pages. Syntax for
+                the <<span>a</span>> tag is: <<span>a</span> href="url" target="_blank">. The
+                target attribute if not set opens the link in the same window, leaving your
+                site. More often than not, it is best to set the target to "_blank" so
+                your site is still open in another tab.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>u</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                The <<span>u</span>> tag underlines text that the opening and closing
+                brakets surround. <u>Underlined text looks like this.</u> Unline <<span>strong</span>>
+                and <<span>em</span>>, reset.css should not cancel the effect of the <<span>u</span>>
+                tag.
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>title</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                The <<span>title</span>> tag is in the <<span>head</span>> element.
+                What you put between <<span>title</span>> and <<span>/title</span>>
+                is what the browser displays as your website's name in the tab. Shorter
+                titles are optimal since there isn't much space for more than three or
+                four words. For example, this website's <<span>title</span>> value
+                is "Coding Reference".
+              </h2>
+            </div>
+          </div>
+
+          <div class="html">
+            <div class="html-title">
+              <<span>meta</span>>
+            </div>
+            <div class="html-content">
+              <h2>
+                <<span>meta</span>> tags are on one line and can be self-closing. It
+                is advisable to write your <<span>meta</span>> tag like this: <<span>meta</span>
+                charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+                The first argument in the above example generates with the boilerplate code
+                but adding the other three ensures that the browser will render your
+                webpage's sizing based on the size of the screen it's viewed on. Without
+                this added, there are often issues when writing the mobile version of
+                a website.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="html-info">
+        <div class="html-info-title">
+          <h1>HTML Information</h1>
+        </div>
+        <div class="info-sections">
+          <div class="info-section">
+            <div class="info-section-title">
+              <h1>Organization</h1>
+            </div>
+            <div class="info-section-content">
+              <p>
+                When writing HTML, it is important to stay organized. HTML is a
+                logical language that can be very confusing if not properly organized.
+                Always use indentation to indicate parent and child <<span>div</span>>
+                elements. Make sure your code is readable, because when you are writing
+                a lot of code, it's hard to fix a specific issue if you struggle
+                to find the actual code.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-section">
+            <div class="info-section-title">
+              <h1>Troubleshooting</h1>
+            </div>
+            <div class="info-section-content">
+              <p>
+                Troubleshooting your code will be very important as you develop as
+                a web designer. Use tools like Google, Mozilla Documentation, Dev Tools,
+                and StackOverflow (to name a few) to perfect your website.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-section">
+            <div class="info-section-title">
+              <h1>The power of the <<span>div</span>></h1>
+            </div>
+            <div class="info-section-content">
+              <p>
+                The <<span>div</span>> tag is again, an important organizational element.
+                It allows you to organize your code in a logical manner, using CSS classes
+                (bootstrap not required) to style. I extensively use <a href="#positioning">CSS Flexbox</a>
+                to organize and layout my webpages. This whole webpage is made of parent
+                <<span>div</span>> tags with child <<span>div</span>> tags and CSS Flexbox
+                to put it all where I want.
+                <br><br><br>See my<a class="button" href="https://github.com/aerialvisual/help" target="_blank">Open Source Code</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <span id="csslink" class="anchor"></span>
+      <div class="basic-css">
+        <div class="section-title" id="basic-css">
+          <h1>CSS</h1>
+        </div>
+        <div class="csss">
+          <div class="css">
+            <div class="css-title">
+              <span>font-family</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The <span>font-family</span> property of CSS is able to be set to
+                a number of pre-defined fonts, as well as imported fonts from
+                somewhere like Google Fonts.
+                <br>
+                <br>
+                Some generic system-safe fonts are:
+                <ul>
+                  <li> - serif or sans-serif</li>
+                  <li> - monospace</li>
+                  <li> - cursive</li>
+                  <li> - fantasy</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>font-family</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  font-family: "Imported font", font; <br>
+                }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>font-weight</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The <span>font-weight</span> CSS property allows you to easily bold
+                or manually set text to a weight, between 100 and 900. 400 is considered
+                "normal" font weight, 300 is "light" and 700 is "bold". <br><br><span>font-weight</span>
+                takes the following values: <br>
+                <ul>
+                  <li> - normal</li>
+                  <li> - bold</li>
+                  <li> - lighter</li>
+                  <li> - bolder</li>
+                  <li> - Number between 100 and 900</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>font-weight</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  font-weight: bold; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>font-style</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The <span>font-style</span> property is used with values like <em>italic</em>.
+                <br><br>The values for <span>font-style</span> are: <br>
+                <ul>
+                  <li> - italic</li>
+                  <li> - oblique</li>
+                  <li> - oblique (deg)</li>
+                </ul>
+                <br>
+                <span>font-style</span> is useful especially when using an imported font
+                that either doesn't have an italic typeface or you didn't import it. It can
+                manually apply a slant to text for you, and you can customize how slanted
+                the text is. If your typeface has italic characters, setting it to oblique
+                will just make it italic, as below.
+                <br>
+                <span class="em">Italic Text</span> &nbsp&nbsp&nbsp <span class="oblique">Oblique Text</span> <br><br>
+                Proper Usage of the <span>font-style</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  font-style: oblique 30deg; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>text-align</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The <span>text-align</span> CSS property is very important when laying out the
+                orientation and design of a webpage. It aligns the text in a container/element
+                in a similar manner to a word processor.
+                <br><br>
+                Common values:
+                <ul>
+                  <li> - left (or start)</li>
+                  <li> - right (or end)</li>
+                  <li> - center</li>
+                  <li> - justify</li>
+                  <li> - justify-all</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>text-align</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  text-align: center; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>display</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                <span>display</span> is one of the most important CSS properties.
+                The way you set <span>display</span> determines the layout of a page,
+                element, <<span>div</span>> or any other element for that matter.
+                See more details about <a href="#positioning">CSS Positioning</a>
+                with <span>display</span> and Flexbox at the link.
+                <br><br>
+                <span>display</span> property values:
+                <ul>
+                  <li> - block</li>
+                  <li> - inline</li>
+                  <li> - inline-block</li>
+                  <li> - flex</li>
+                  <li> - inline-flex</li>
+                  <li> - grid</li>
+                  <li> - subgrid</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>display</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  display: flex; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>position</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The CSS <span>position</span> property is most common in positioning
+                the <<span>header</span>>. Looking at the relative and absolute values for
+                display, relative takes into account content on the page and makes room.
+                Absolulte doesn't include the selected element in the page flow, it just
+                places it where it's told regardless of other content. The fixed value
+                also removes it from the page flow and behaves like absolute, but it will
+                stay on the page regardless of scrolling.
+                <br><br>
+                <ul>
+                  <li> - relative</li>
+                  <li> - absolute</li>
+                  <li> - fixed</li>
+                  <li> - sticky</li>
+                  <li> - static</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>position</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  position: fixed; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>color</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The CSS <span>color</span> property is used for text. This property
+                is used often when designing, and accepts values in a few ways. There are
+                over 140 CSS (English) color inputs. You can input a <span>rgb</span>
+                (number, number, number) value. You can input a <span>rgba</span>(number, number, number, index)
+                value. You can input a hex value, like #bf00d1. You can also input a hsl or hsla value, do
+                your research!<br><br>
+                <ul>
+                  <li> - English Color</li>
+                  <li> - rgb(255, 255, 255)</li>
+                  <li> - #000000</li>
+                  <li> - hsl(%, %, %)</li>
+                  <li> - rgba and hsla</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>color</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  color: rgba(0, 0, 0, 0.5); <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>background-color</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The <span>background-color</span> property is used frequently and
+                is similar to <span>color</span>.<br><br>
+                <ul>
+                  <li> - English Color</li>
+                  <li> - rgb(255, 255, 255)</li>
+                  <li> - #000000</li>
+                  <li> - hsl(%, %, %)</li>
+                  <li> - rgba and hsla</li>
+                </ul>
+                <br>
+                Note that the <em>a</em> in <span>rgba</span> and <span>hsla</span>
+                is the transparency value, between 0 and 1. Look at the top of this page.
+                The title box has a <span>background-color</span> of<br> rgba(255, 255, 255, 0.5).
+                <br><br>
+                Proper Usage of the <span>position</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  position: fixed; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>background-image</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The <span>background-image</span> CSS property is used to put
+                an image behind other elements. It is used on a large scale at the
+                top of this webpage.
+                <ul>
+                  <li> - url</li>
+                  <li> - gradient</li>
+                </ul>
+                <br>
+                The URL destination property can be a local (relative) or remote
+                file path.
+                <br><br>
+                Below, these are important.
+                Other properties (recommended settings):<br><br>
+                <ul>
+                  <li>background-position: center;</li>
+                  <li>background-size: cover;</li>
+                  <li>background-repeat: no-repeat;</li>
+                </ul>
+
+                <br>
+                Proper Usage of the <span>background-image</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  background-image: url("https://mysite.io/cat.png"); <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>width/height</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                CSS <span>width</span> and <span>height</span> properties are used
+                to size elements. They both take the same arguments and are usually used together.
+                Sometimes only one needs to be declared, but it's always nice to have both.
+                <br><br>
+                Aruments they take:
+                <ul>
+                  <li> - 18vw (viewport width)</li>
+                  <li> - 76vh (viewport height)</li>
+                  <li> - 94px</li>
+                  <li> - 100%</li>
+                  <li> - 3rem</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>width/height</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  width: 40vw; <br> &nbsp&nbsp&nbsp&nbsp height: 25vh; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>border</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The CSS <span>border</span> property is used to define the, well,
+                border of an element! You can more specific and declare border-top, border-right,
+                border-bottom, border-left, and make it curved with border-radius. The standard
+                border syntax is below. <br><br>Each of the three positions take the below arguments:
+                <ul>
+                  <li> - First Argument: Width. Takes any sizing.</li>
+                  <li> - Second Argument: Type. Takes a definition.</li>
+                  <li> - Third Argument: Color. Takes any type of color.</li>
+                </ul>
+                <br>
+                Second Argument types are: dotted, dashed, solid, double, groove, ridge,
+                inset, outset, none, hidden.
+                <br><br>
+                Proper Usage of the <span>border</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  border: 3px solid blue; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>text-decoration</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The <span>text-decoration</span> property is used to underline, overline,
+                wavy line, get rid of line, you get the line. It has three arguments; text-decoration-line,
+                text-decoration-style, and text-decoration-color. You can declare just the first one, like
+                text-decoration: underline as well as different combinations of CSS shorthand.
+                <br><br>
+                Some examples are:
+                <ul>
+                  <li> - text-decoration: wavy overline purple;</li>
+                  <li> - text-decoration: underline;</li>
+                  <li> - text-decoration: none;</li>
+                  <li> - text-decoration: dashed red;</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>color</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  color: rgba(0, 0, 0, 0.5); <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>margin</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The CSS <span>margin</span> property is part of the Box Model, as well
+                as padding, border, and width/height. More about the Box Model and Positioning
+                in the next section of this guide. Margin is outside of an element between
+                other elements.
+                <br><br>
+                Syntax Variations:
+                <ul>
+                  <li> - margin: top right bottom left;</li>
+                  <li> - margin: top/bottom left/right;</li>
+                  <li> - margin-top: 30px;</li>
+                  <li> - margin: 2vh;</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>margin</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  margin: 2vh auto; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>padding</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                CSS <span>padding</span> is similar to <span>margin</span>, but it's the
+                space <em>inside</em> of an element. Also part of the Box Model.
+                <br><br>
+                Syntax examples:
+                <ul>
+                  <li> - padding: 3px;</li>
+                  <li> - padding: 3vh 2vw;</li>
+                  <li> - padding-left: 10px;</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>padding</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  padding: 2vh; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>max and min</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                Using <span>max</span> and <span>min</span> properties is helpful when
+                designing responsive webpages. There are times that you will want to
+                have containers appear differently on different devices, and the difference
+                isn't enough to justify a <span>@media</span> query.
+                <br><br>
+                <ul>
+                  <li> - max-width: 30vw;</li>
+                  <li> - min-height: 25vh;</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>max/min</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  max-height: 400px; <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>@media</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                Media queries are important in responsive web design. Their syntax is simple,
+                and you place CSS code inside of a media query that you want to take effect
+                when the query condition is met. Information in a media query overrides
+                CSS calling outside of the media query when its condition is met.
+                <br><br>
+                Syntax examples:
+                <ul>
+                  <li> - @media only screen and (max-width: 480px) {}</li>
+                  <li> - @media only screen and (min-resolution: 1440p {})</li>
+                  <li> - @media only screen and (orientation: portrait) {}</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>@media</span> query: <br><br>
+                &nbsp&nbsp<span>@media only screen and (max-width: 480px) </span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  <span>.home-content-container</span> { <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                max-width: 40vw; <br> &nbsp&nbsp} <br> }
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>@font-face</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                The <span>@font-face</span> query is an alternative to linking an external
+                font in the <<span>head</span>>.
+                <br><br>
+                <span>@font-face</span> has a few quirks that are different than <span>@media</span>.
+                <br><br>
+                Proper Usage of the <span>@font-face</span> query: <br><br>
+                &nbsp&nbsp<span>@font-face</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  font-family: "Open Sans"; <br> &nbsp&nbsp&nbsp&nbsp
+                src: url("./fonts/OpenSans.woff2") format("woff2");<br>} <br> <br>
+                Note that the src line is usually on one line.
+              </h2>
+            </div>
+          </div>
+
+          <div class="css">
+            <div class="css-title">
+              <span>line-height</span>
+            </div>
+            <div class="css-content">
+              <h2>
+                CSS <span>line-height</span> is used to give text more space between lines,
+                as the name suggests. It takes a numerical value that is multiplied by the
+                current line height. Common values for additional <span>line-height</span> are
+                1.2, 1.3, and 1.4.
+                <br><br>
+                Syntax examples:
+                <ul>
+                  <li> - line-height: 1.2;</li>
+                  <li> - line-height: 1.2;</li>
+                </ul>
+                <br>
+                Proper Usage of the <span>line-height</span> property: <br><br>
+                &nbsp&nbsp<span>selector</span> { <br>
+                &nbsp&nbsp&nbsp&nbsp  line-height: 1.2; <br> }
+              </h2>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <span id="plink" class="anchor"></span>
+      <div class="positioning">
+        <div class="positioning-title">
+          <h1>Positioning</h1>
+        </div>
+        <div class="box-model" class="positioning-section">
+          <div class="positioning-section-title">
+            <h1>The Box Model</h1>
+          </div>
+          <div class="positioning-section-content">
+            <div class="content">
+              <img src="./resources/images/boxmodel.png" alt="The Box Model" />
+              <div class="cite">***Image from Mozilla MDN***</div>
+            </div>
+            <div class="content" class="content-left">
+              <p>
+                &nbsp&nbsp&nbsp&nbsp
+                The Box Model is very important in developing webpages. By utilizing
+                CSS properties like <span>margin</span>, <span>padding</span>, <span>width</span>,
+                <span>height</span>, and <span>border</span>, you can position elements exactly
+                where you want them.<br><br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                Margin is, as in the diagram to the left, space outside of an element that
+                you can control to define distances between objects on a page. When set to a single
+                number, margin adds that same amount on all sides. You can customize how
+                margin is set individually for all sides, just for one side, for the top and
+                bottom, or use filler values like <u>auto</u> to center in the direction
+                you assign. See the above CSS section and read about Margin in its very
+                own box!
+                <br><br>
+
+                &nbsp&nbsp&nbsp&nbsp
+                Padding is also important. It keeps your text and other elements from feeling
+                "squished." The padding around each of the CSS boxes above is what keeps those elements
+                from looking rough, compressed, ect. Utilizing padding gives your webpages more
+                of a "controlled," or refined look. Asthetic is important because you want your
+                visitors to feel comfortable; not struggling to find their way around your website.
+                <br><br>
+                &nbsp&nbsp&nbsp&nbsp
+                Border is the last property. It is most commonly used to literally, add a border!
+                As with the other properties, see the boxes above for syntax and more!
+                <br>
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-section-title">
+          <h1>Flexbox Positioning</h1>
+        </div>
+        <div class="flex-section">
+          <div class="flex-part">
+            <div class="flex-section-content">
+              <p>
+                &nbsp&nbsp&nbsp&nbsp
+                Flexbox Positioning is a modern method that I use to lay out my
+                webpages. I personally prefer it over Grid and using "Block" layout,
+                but you need to know the basics of them all.
+                <br><br>
+                &nbsp&nbsp&nbsp&nbsp
+                The first important CSS property with Flexbox is <span>display</span>.
+                Read about <span>display</span> above for syntax. When set to
+                <span>display</span>: flex, an element behaves like a block. Flex can
+                be aligned on two axis: the Main Axis and the Cross Axis.
+                <br><br>
+                &nbsp&nbsp&nbsp&nbsp
+                On the top diagram to the right, you can see that the main axis is
+                lateral and the cross axis is vertical. The main axis is affected
+                by the CSS properties <span>flex-direction</span>, and <span>justify-content</span>.
+                The main CSS properties that affect the cross axis are <span>flex-direction</span>
+                and <span>align-items</span>/<span>align-content</span>. To be clear,
+                in order to declare one of these properties in CSS, you have to already have
+                declared <span>display</span>: flex; in the element or a parent element.
+                <span>flex-wrap</span> is an important element when laying out static
+                galleries or containers in a row. You can set <span>flex-wrap</span>
+                to wrap, no-wrap, or wrap-reverse. By allowing containers to wrap, you can
+                make multi-row galleries that are responsive and can be adjusted
+                for multi-size viewing.
+                At the bottom of this webpage I'll provide links to parts of the
+                Mozilla MDN and css-tricks.com for more material and self-help.
+                <br><br>
+                &nbsp&nbsp&nbsp&nbsp
+                Values for <span>justify-content</span>, <span>align-items</span>,
+                and <span>align-content</span> are: center, flex-start, flex-end,
+                space-between, space-around, and stretch.
+                <br><br>
+                Other Flex Properties:
+                <ul>
+                  <li> - flex-basis</li>
+                  <li> - flex-grow/flex-shrink</li>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex-part">
+            <div class="flex-diagrams">
+              <img src="./resources/images/flex-axis.png" alt="Flex-Axis" />
+              <img src="./resources/images/flex-row.png" alt="Flex-Row" />
+              <img src="./resources/images/flex-column.png" alt="Flex-Column" />
+              <div class="cite">***Images from Mozilla MDN***</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-section" class="flex-buttons">
+          <div class="buttons">
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">
+            <h1>Complete Flexbox Guide</h1>
+            </a>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">
+            <h1>Flexbox Mozilla Guide</h1>
+            </a>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank">
+            <h1>Positioning Mozilla Guide</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <span id="gitlink" class="anchor"></span>
+      <div class="git-main-section">
+        <div class="git-section-title">
+          <h1>Git</h1>
+        </div>
+        <div class="git-part-title">
+          <h1>Git and GitHub</h1>
+        </div>
+        <div class="git-section">
+
+          <div class="git-part">
+            <img src="./resources/images/git.png" alt="Git CLI" />
+            <img src="./resources/images/github.png" alt="Git CLI" />
+          </div>
+
+          <div class="git-part">
+
+            <div class="git-part-content">
+              &nbsp&nbsp&nbsp&nbsp
+              <p>
+                &nbsp&nbsp&nbsp&nbsp
+                Git and GitHub together are very powerful tools. Together, you can
+                successfully version and publish your code and even websites. This
+                website is hosted with GitHub pages, free, and I can connect it
+                to a domain of my choice.
+                <br><br>
+                Common commands and defenitions in the Git Command Line Interface:
+                <ul>
+                  <li> - "cd" _____ navigates to a file or file path that follows
+                  the command.</li>
+                  <li> - "git init" initializes a Git directory in the current root
+                    file.</li>
+                  <li> - "git status" checks the status of files in a git directory.</li>
+                  <li> - "git add ." adds all files that have been modified to the
+                    staging area.</li>
+                  <li> - "git commit -m "reason"" records modifications to the local
+                    repository.</li>
+                  <li> - "git push" updates the files in your GitHub online database with
+                    local repository changes. </li>
+                </ul>
+                <br><Br>
+                  Setup commands:
+                <ol>
+                  <li>1. "git init"</li>
+                  <li>2. "git add ."</li>
+                  <li>3. "git commit -m "First Commit"</li>
+                  <li>4. "git remote add origin git@github.com:User/UserRepo.git"</li>
+                  <li>5. "git push -u origin master"</li>
+                </ol>
+                <br><br>
+                &nbsp&nbsp&nbsp&nbsp
+                The possibilities are endless with GitHub. You can view my open source
+                code at this website's repository at the link in the next section. Git
+                is a powerful tool that makes it easy and lets you say goodbye to the
+                days of uploading folder by folder to some online "good deal" directory.
+                Developers use GitHub for code projects in any language.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span id="openlink" class="anchor"></span>
+      <div class="open-source-title">
+        <h1>Links, Open Source, and More</h1>
+      </div>
+      <div class="open-source-section">
+        <div class="open-source-module">
+          <div class="module-title">
+            <h1>Self Helps</h1>
+          </div>
+          <div class="module-content">
+            <p>
+              &nbsp&nbsp&nbsp&nbsp
+              It is very important to utilize developer forums and documentation
+              when learning web development, and even writing your own code. I have
+              some links to help you below to different part of Mozilla's documentation
+              and some other websites. Take a look at my video to see my workflow and
+              how to progress in your projects!
+            </p>
+          </div>
+
+          <div class="links">
+            <a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Documentation</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="_blank">Mozilla HTML Guides</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Mozilla CSS Guides</a>
+            <a href="https://css-tricks.com/almanac/" target="_blank">CSS-Tricks.com</a>
+            <a href="https://www.w3schools.com/cssref/default.asp" target="_blank">w3schools Coding Guides</a>
+          </div>
+
+          <div class="open-source-module">
+            <div class="module-title">
+              <h1>Development Video</h1>
+            </div>
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/D-kxvVlQ7xc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="open-source-module">
+            <div class="module-title">
+              <h1>My Open Source Code</h1>
+            </div>
+            <a href="https://aerialvisual.github.io" target="_blank">
+            <div class="source-code-button">
+              <span>Source Code</span>
+            </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <footer>
+        <div class="footers">
+          <div class="footer">
+            <a href="#">Back to Top</a>
+          </div>
+          <div class="footer">
+            <span>© Gray AerialVisual and Grayson Bertaina, 2018</span>
+          </div>
+          <div class="footer">
+            <span>grayaerialvisual.com</span>
+          </div>
+          <div class="footer">
+            <span>grayaerialvisual@gmail.com</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
